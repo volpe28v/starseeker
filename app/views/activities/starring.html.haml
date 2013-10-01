@@ -1,11 +1,11 @@
-- @title = 'Daily hot repositories'
+- @title = 'Recommended repositories'
 - private_feed = feed_url(username: @user.username, format: 'atom', token: @user.feed_token)
 
 = content_for :head do
   = auto_discovery_link_tag :atom, private_feed
 
 %h1
-  Daily hot repositories
+  Recommended repositories
 Starred repositories by #{@user.username}'s followings
 
 %span#feed
